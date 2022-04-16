@@ -25,13 +25,13 @@
 Git Bash を起動して
 
 ```bash
-git config --global user.name "Your Name
+git config --global user.name 'Your Name'
 ```
 
 と入力してください。
 
 ```bash
-git config --global user.email "Your Email"
+git config --global user.email 'Your Email'
 ```
 
 と入力してください。<br>
