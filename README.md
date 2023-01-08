@@ -1,9 +1,9 @@
 # Usage
-main.pyの54行目の部分を自分のに書き換えてください。
-```python
-func("mail", "psw", "webhook_url")
+Fix them
 ```
-そして
-```bash
-python main.py
+url = 'URL'
+
+user = 'USER_EMAIL'
+pswd = 'USER_PASSWARD'
+webhook = 'WEBHOOK_URL'
 ```
