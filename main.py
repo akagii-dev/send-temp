@@ -9,7 +9,7 @@ from selenium.webdriver.chrome import service
 
 options = Options()
 options.add_argument('--headless')
-driver = webdriver.Chrome(service.Service(executable_path=ChromeDriverManager().install()), chrome_options=options)
+driver = webdriver.Chrome(ChromeDriverManager().install(), chrome_options=options)
 
 # URLを指定
 url = 'URL'
