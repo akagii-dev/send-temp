@@ -5,7 +5,6 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
-from selenium.webdriver.chrome import service 
 
 options = Options()
 options.add_argument('--headless')
@@ -19,7 +18,6 @@ pswd = 'USER_PASSWARD'
 webhook = 'WEBHOOK_URL'
 
 driver.get(url)
-print('urlを開いた')
 time.sleep(5)
 # ユーザーIDとパスワードを入力
 driver.find_element(By.ID, 'i0116').send_keys(user)
@@ -40,9 +38,9 @@ time.sleep(5)
 # フォームに入力
 driver.find_elements(By.XPATH, '//input[@value="36.0〜36.9"]')[0].click()
 print('体温を選択')
-driver.find_element(By.CLASS_NAME, 'button-content').click()
+driver.find_elements(By.CLASS_NAME, 'button-content')[1].click()
+time.sleep(1)
 print('送信')
-
 driver.close()
 
 # discordに通知するように設定する(webhook経由)
